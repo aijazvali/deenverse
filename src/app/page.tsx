@@ -36,7 +36,7 @@ export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen px-4 text-center bg-black text-white">
       <img
-        src="/deenverse-logo.jpg"
+        src="/deenverse-logo.JPG"
         alt="DeenVerse Logo"
         className="w-32 h-auto mb-6"
       />
