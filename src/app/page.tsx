@@ -41,28 +41,39 @@ export default function Home() {
         className="w-32 h-auto mb-6"
       />
       <h1 className="text-4xl sm:text-6xl font-bold mb-4">
-  <span className="text-white">Deen</span>
-  <span className="text-yellow-400">Verse</span>
-</h1>
+        <span className="text-white">Deen</span>
+        <span style={{ color: "#FDD017" }}>Verse</span>
+      </h1>
 
       <p className="text-lg sm:text-xl mb-6 max-w-xl">
-        India&rsquo;s First dedicated Islamic learning platform — app launching on{" "}
-        <strong>1st June 2025</strong>.
+        India&rsquo;s First dedicated Islamic learning platform — app launching
+        on <strong>1st June 2025</strong>.
       </p>
 
       <div className="flex space-x-4 text-2xl font-semibold mb-6">
-        <div className="bg-yellow-400 text-black p-4 rounded shadow">
-          {timeLeft.days} <span className="text-sm">Days</span>
-        </div>
-        <div className="bg-yellow-400 text-black p-4 rounded shadow">
-          {timeLeft.hours} <span className="text-sm">Hours</span>
-        </div>
-        <div className="bg-yellow-400 text-black p-4 rounded shadow">
-          {timeLeft.mins} <span className="text-sm">Minutes</span>
-        </div>
-        <div className="bg-yellow-400 text-black p-4 rounded shadow">
-          {timeLeft.secs} <span className="text-sm">Seconds</span>
-        </div>
+        {[
+          { value: timeLeft.days, label: "Days" },
+          { value: timeLeft.hours, label: "Hours" },
+          { value: timeLeft.mins, label: "Minutes" },
+          { value: timeLeft.secs, label: "Seconds" },
+        ].map((item, index) => (
+          <div key={index} className="relative w-24 h-32 text-center">
+            {/* Custom dome image */}
+            <img
+              src="/dome.png"
+              alt="Dome"
+              className="absolute top-3 left-1/2 transform -translate-x-1/2 w-24 h-24 object-contain pointer-events-none"
+            />
+
+            {/* Countdown number and label */}
+            <div className="relative z-10 flex flex-col justify-end h-full pb-2">
+              <div className="text-3xl font-bold text-white">
+                {item.value}
+              </div>
+              <div className="text-sm text-white">{item.label}</div>
+            </div>
+          </div>
+        ))}
       </div>
 
       <p className="mb-4 text-gray-600">Stay tuned. Our app is on its way!</p>
