@@ -46,7 +46,7 @@ export default function Home() {
 </h1>
 
       <p className="text-lg sm:text-xl mb-6 max-w-xl">
-        India's First dedicated Islamic learning platform — app launching on{" "}
+        India&rsquo;s First dedicated Islamic learning platform — app launching on{" "}
         <strong>1st June 2025</strong>.
       </p>
 
