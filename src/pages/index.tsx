@@ -1,4 +1,5 @@
-"use client";
+import CursorGlow from "@/components/CursorGlow";
+
 
 import { useEffect, useState } from "react";
 
@@ -51,6 +52,7 @@ export default function Home() {
       </p>
 
       <div className="flex space-x-4 text-2xl font-semibold mb-6">
+        <CursorGlow />
         {[
           { value: timeLeft.days, label: "Days" },
           { value: timeLeft.hours, label: "Hours" },
