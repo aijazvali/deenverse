@@ -59,17 +59,17 @@ export default function Home() {
           { value: timeLeft.mins, label: "Minutes" },
           { value: timeLeft.secs, label: "Seconds" },
         ].map((item, index) => (
-          <div key={index} className="relative w-24 h-32 text-center">
+          <div key={index} className="relative w-24 h-39 text-center">
             {/* Custom dome image */}
             <img
-              src="/dome.png"
+              src="/domen.png"
               alt="Dome"
-              className="absolute top-3 left-1/2 transform -translate-x-1/2 w-24 h-24 object-contain pointer-events-none"
+              className="absolute top-9 left-1/2 transform -translate-x-1/2 w-24 h-24 object-contain pointer-events-none"
             />
 
             {/* Countdown number and label */}
-            <div className="relative z-10 flex flex-col justify-end h-full pb-2">
-              <div className="text-3xl font-bold text-white">
+            <div className="relative z-10 flex flex-col justify-end h-full pb-2 space-y-6">
+              <div className="text-3xl font-bold text-black">
                 {item.value}
               </div>
               <div className="text-sm text-white">{item.label}</div>

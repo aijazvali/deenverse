@@ -653,22 +653,22 @@ function Home() {
                             label: "Seconds"
                         }
                     ].map((item, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "relative w-24 h-32 text-center",
+                            className: "relative w-24 h-39 text-center",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                                    src: "/dome.png",
+                                    src: "/domen.png",
                                     alt: "Dome",
-                                    className: "absolute top-3 left-1/2 transform -translate-x-1/2 w-24 h-24 object-contain pointer-events-none"
+                                    className: "absolute top-9 left-1/2 transform -translate-x-1/2 w-24 h-24 object-contain pointer-events-none"
                                 }, void 0, false, {
                                     fileName: "[project]/src/pages/index.tsx",
                                     lineNumber: 64,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "relative z-10 flex flex-col justify-end h-full pb-2",
+                                    className: "relative z-10 flex flex-col justify-end h-full pb-2 space-y-6",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "text-3xl font-bold text-white",
+                                            className: "text-3xl font-bold text-black",
                                             children: item.value
                                         }, void 0, false, {
                                             fileName: "[project]/src/pages/index.tsx",
