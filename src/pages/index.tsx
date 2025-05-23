@@ -52,7 +52,7 @@ export default function Home() {
       </p>
 
       <div className="flex space-x-4 text-2xl font-semibold mb-6">
-        <CursorGlow />
+         <CursorGlow />
         {[
           { value: timeLeft.days, label: "Days" },
           { value: timeLeft.hours, label: "Hours" },
